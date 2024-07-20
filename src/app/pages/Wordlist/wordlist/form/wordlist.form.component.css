@@ -1,0 +1,66 @@
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 14px;
+  color: #ABABAB;
+  margin-bottom: 5px;
+  position: relative;
+
+}
+
+label .required {
+  color: red;
+  margin-left: 5px;
+  /*etoile*/
+}
+
+select {
+
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  color: #6b6b6b;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  appearance: none;
+  background: white url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMiAxMiI+PHBhdGggZD0iTTMgNEw2IDdMOSA0IiBmaWxsPSIjY2NjIiAvPjwvc3ZnPg==') no-repeat right 10px center;
+  background-size: 12px;
+  cursor: pointer;
+  font-family: "Raleway";
+
+
+}
+
+select:focus {
+  border-color: #a6a6a6;
+  outline: none;
+}
+
+
+input[type="text"] {
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  color: #6b6b6b;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type="text"]::placeholder {
+  color: #b3b3b3;
+  font-style: italic;
+}
+
+input[type="text"]:focus {
+  border-color: #a6a6a6;
+  outline: none;
+}
+.btn {
+  background:#487354;
+  color:white;
+
+}

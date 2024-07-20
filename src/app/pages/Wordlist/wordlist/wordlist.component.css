@@ -1,0 +1,7 @@
+.col a:nth-child(1):hover {
+  background:#93E6E5;
+}
+
+.col a:nth-child(2):hover {
+  background:#FCB900;
+}
