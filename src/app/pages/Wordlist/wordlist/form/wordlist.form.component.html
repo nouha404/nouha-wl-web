@@ -283,7 +283,7 @@
           <div class="form-group">
             <label for="numbers">Informations<span class="required">*</span></label>
             <select id="numbers" name="numbers"
-            [(ngModel)]="selectedNumber"
+            [(ngModel)]="DefaultselectedNumber"
             >
               <option value="" disabled selected>Sélectionnez le nombre</option>
               <option value="2">2</option>
@@ -294,7 +294,7 @@
 
             <div class="element" style="margin: 10px auto;" >
 
-                <div *ngFor="let index of numberSequence(selectedNumber); let i = index" class="form-group"
+                <div *ngFor="let index of numberSequence(DefaultselectedNumber); let i = index" class="form-group"
 
                 >
                   <label for="info{{ index }}">Information n°{{ index }}<span class="required">*</span></label>

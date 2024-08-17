@@ -13,15 +13,14 @@ export const routes: Routes = [
 
   {
     path:"wordlist",
-
     children: [
-      {
-        path:"",
-        component:WordlistComponent,
-      },
       {
         path:"form",
         component:WordlistFormComponent
+      },
+      {
+        path: "file",
+        component : WordlistComponent
       },
     ]
   },
