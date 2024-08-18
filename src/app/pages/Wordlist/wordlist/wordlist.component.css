@@ -1,7 +1,18 @@
+.col {
+  position: relative;
+}
 .col a:nth-child(1):hover {
   background:#93E6E5;
 }
 
 .col a:nth-child(2):hover {
-  background:#FCB900;
+  background: rgba(252, 185, 0, 0.8);
+  cursor: wait;
+}
+
+.text-json {
+  position: absolute;
+  bottom: -40px;
+  right: 35px;
+  font-size: 12px;
 }

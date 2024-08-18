@@ -1,19 +1,20 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
-import { Router } from '@angular/router';
-import { WordlistImp } from '../../../../core/services/Impl/wordlist.imp';
+import {Router, RouterLink} from '@angular/router';
+import { WordlistServiceImpl } from '../../../../core/services/Impl/wordlist-impl.service';
 import {WorldlistModel } from '../../../../core/models/worldlist.model';
+import {MatIcon} from "@angular/material/icon";
 
 @Component({
   selector: 'app-wordlist.form',
   standalone: true,
-  imports: [FormsModule,CommonModule],
+  imports: [FormsModule, CommonModule, RouterLink, MatIcon],
   templateUrl: './wordlist.form.component.html',
   styleUrl: './wordlist.form.component.css'
 })
 export class WordlistFormComponent {
-  constructor(private wlService:WordlistImp,private router:Router){}
+  constructor(private wlService:WordlistServiceImpl, private router:Router){}
 
   DefaultselectedNumber: number=2;
   infoValues: WorldlistModel[] = [];
@@ -37,13 +38,13 @@ export class WordlistFormComponent {
 
       this.wlService.createInformation(this.infoValues)
         .subscribe(() => {
-          this.router.navigateByUrl('/home');
+          this.wlService.setFormSubmitted(true);
+          this.router.navigateByUrl('/wordlist/file');
 
         }, error => {
           console.error("Error submitting form:", error);
         });
       } else {
-
         this.errors = "Veuillez remplir tous les champs obligatoires.";
       }
 

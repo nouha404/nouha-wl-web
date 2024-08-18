@@ -9,6 +9,6 @@ export const appConfig: ApplicationConfig = {
   providers: [
     provideRouter(routes),
     provideClientHydration(),
-    provideHttpClient(withFetch()) // recuperer les donnes du back
+    provideHttpClient(withFetch())
 ]
 };
