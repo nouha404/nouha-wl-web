@@ -1,5 +1,83 @@
 .btn {
-  background:#487354;
-  color:white;
+  background: #487354;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 22px;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
 
+.btn:hover {
+  background: #3a5d45;
+}
+
+@media (max-width: 768px) {
+  .col.w-50 {
+    width: 50%;
+    text-align: left;
+    margin-bottom: 0;
+  }
+
+  mat-icon[svgIcon="Personne"] {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+  }
+
+  .btn {
+    font-size: 20px;
+    padding: 10px 20px;
+  }
+
+  p {
+    padding-top: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  h1 {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .col.w-50 {
+    width: 100%;
+    text-align: center;
+  }
+
+  mat-icon[svgIcon="Personne"] {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+  }
+
+  .btn {
+    font-size: 18px;
+    padding: 8px 16px;
+  }
+
+  p {
+    padding-top: 8px;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  h1 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+}
+
+
+@media (max-width: 486px) {
+  .container {
+    margin-top: 30px;
+  }
+  .col.w-50:nth-child(2) {
+    display: none;
+  }
 }
