@@ -1,3 +1,3 @@
 export const environment = {
-  API_URL: "http://localhost:8000/api"
+  API_URL: "https://nouha-wl-web-backend.onrender.com/api"
 };
